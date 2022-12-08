@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="CurrentCallCVC" customModule="TabBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="49"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Voice" translatesAutoresizingMaskIntoConstraints="NO" id="Ckq-UJ-uaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="kyk-FI-eZP"/>
+                            <constraint firstAttribute="width" constant="50" id="pzb-g6-1zv"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ckq-UJ-uaZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CVE-C8-xdG"/>
+                <constraint firstItem="Ckq-UJ-uaZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vne-yu-oQW"/>
+                <constraint firstAttribute="trailing" secondItem="Ckq-UJ-uaZ" secondAttribute="trailing" id="loF-LC-qhf"/>
+                <constraint firstAttribute="bottom" secondItem="Ckq-UJ-uaZ" secondAttribute="bottom" id="mFE-hm-7H4"/>
+            </constraints>
+            <size key="customSize" width="50" height="49"/>
+            <connections>
+                <outlet property="cellimgView" destination="Ckq-UJ-uaZ" id="R27-O5-qep"/>
+            </connections>
+            <point key="canvasLocation" x="27.536231884057973" y="121.54017857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Voice" width="50" height="50"/>
+    </resources>
+</document>
